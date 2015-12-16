@@ -1,0 +1,29 @@
+<h1><%= @post.title %> </h1>
+
+<p><%= @post.body %></p>
+
+
+<p>
+	<tr>
+		<td>Створено</td>
+		<td><%= @post.created.to_formatted_s(:short) %></td>
+	</tr>
+</p>
+
+<p>
+	<tr>
+		<td>Номер</td>
+		<td><%= @post.id %></td>
+	</tr>
+</p>
+
+<p>
+	<tr>
+		<td>Автор: </td>
+		<td><big><%= @post.author %></big></td>
+	</tr>
+</p>
+
+
+<%= link_to "Видалити", post_path(@post), method: :delete, data: {confirm: "Серйозно?"} %>
+<%= link_to "Редагувати", edit_post_path(@post) %>
