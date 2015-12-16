@@ -1,0 +1,20 @@
+<%= form_for @post do |f| %>
+  <p>
+    <%= f.label :author, "Ваше ім’я" %>
+	<%= f.text_area :author %>
+  </p>
+
+  <p>
+	<%= f.label :title, "Назва" %>
+	<%= f.text_area :title %>
+  </p>
+
+  <p>
+	<%= f.label :body %>
+	<%= f.text_area :body %>
+  </p>
+
+  <p>
+	<%= f.submit %>
+  </p>
+<% end %>
