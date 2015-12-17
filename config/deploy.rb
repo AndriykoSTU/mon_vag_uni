@@ -6,7 +6,7 @@ set :application, 'myapp'
 
 
 set :scm, :git
-set :repo_url, 'https://AndriykoSTU:deusexmach1na@github.com/AndriykoSTU/mon_vag_uni'
+set :repo_url, 'git@github.com:AndriykoSTU/mon_vag_uni.git'
 set :branch, 'master'
 
 
