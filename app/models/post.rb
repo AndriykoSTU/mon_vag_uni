@@ -8,7 +8,7 @@ class Post
   field :author,  type: String
   field :body,    type: String
   field :created, type: Time,   default: ->{Time.now}
-  #field :id,      type: String, default: ->{_id}
+  field :id,      type: String, default: ->{_id}
 
   validates :body, :title, :author, presence: true
 end
