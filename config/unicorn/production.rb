@@ -10,7 +10,7 @@ worker_processes 3
 timeout 30
 preload_app true
 
-listen '/home/deployer/apps/myapp/current/tmp/unicorn.myapp.sock', backlog: 64
+listen '/tmp/unicorn.myapp.sock', backlog: 64
 before_fork 
 old_pid = '#{root}/tmp/pids/unicorn.pid.oldbin'
 if File.exists?(old_pid) && server.pid != old_pid
