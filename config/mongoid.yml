@@ -99,11 +99,15 @@ test:
         # low amounts for fast failures.
         max_retries: 1
         retry_interval: 0
+
 production:
-   sessions:
+  sessions:
      default:
-       database: completed_test_app_test
+
        hosts:
-         - 192.168.44.10:27017
+         - 192.168.33.10:27017
+       
+       database: completed_test_app_test
+       
        #options:
         # read: primary
