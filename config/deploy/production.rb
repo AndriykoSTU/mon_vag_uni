@@ -18,7 +18,7 @@ set :deploy_to, "/home/#{fetch(:user)}/apps/#{fetch(:application)}"
 
 # role-based syntax
 # ==================
-
+ #set :bundle_flags, "--no-deployment"
 # Defines a role with one or multiple servers. The primary server in each
 # group is considered to be the first unless any  hosts have the primary
 # property set. Specify the username and a domain or IP for the server.

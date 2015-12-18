@@ -37,7 +37,7 @@ class PostsController < ApplicationController
   	      flash.notice = "Post '#{@post.title}' updated!"
   	      redirect_to post_path(@post)
   	    else
-  	      render acrion: "edit"
+  	      render action: "edit"
   	    end  		
   	end
 
